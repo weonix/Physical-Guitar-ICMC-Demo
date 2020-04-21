@@ -2997,6 +2997,7 @@ input, select, textarea {
 		-ms-flex-direction: row;
 		flex-direction: row;
 		min-height: 22.5em;
+		/*! min-width: max-content; */
 	}
 
 		body.is-ie .spotlights > section {
@@ -3009,7 +3010,7 @@ input, select, textarea {
 			border-radius: 0;
 			display: block;
 			position: relative;
-			width: 25em;
+			width: 35em;
 		}
 
 			.spotlights > section > .image img {
@@ -3022,7 +3023,7 @@ input, select, textarea {
 				-webkit-transition: opacity 1s ease;
 				-ms-transition: opacity 1s ease;
 				transition: opacity 1s ease;
-				background: rgba(49, 36, 80, 0.9);
+				background: #008081;
 				content: '';
 				display: block;
 				height: 100%;
@@ -3047,7 +3048,7 @@ input, select, textarea {
 			-webkit-justify-content: center;
 			-ms-justify-content: center;
 			justify-content: center;
-			width: 50em;
+			width: 40em;
 			-ms-flex: 1;
 		}
 
