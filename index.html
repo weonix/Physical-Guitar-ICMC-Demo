@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>2019/20 Term 2 CJC1904 Final Year Project</title>
+		<title>Guitar Virtual Instrument using Physical Modelling with Collision Simulation</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -23,7 +23,8 @@
 							<li><a href="#intro">Homepage</a></li>
 							<li><a href="#one">Features</a></li>
 							<li><a href="#two">Showcases</a></li>
-							<li><a href="#three">Downloads</a></li>
+							<li><a href="#three">Animations</a></li>
+							<li><a href="#four">Downloads</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -34,12 +35,13 @@
 
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
-							<h2>The Chinese University of Hong Kong (CUHK)</h2>
-							<h2>2019/20 Term 2 CJC1904 Final Year Project</h2>
+							<!-- <h2>The Chinese University of Hong Kong (CUHK)</h2> -->
+							<h2>International Computer Music Conference 2020</h2>
 							<h1>Guitar Virtual Instrument<br>using Physical Modelling Synthesis<br>with Collision Simulation</h1>
 							<p>
-								Ho Ka Wing, Charles (SID: 1155085718)<br>
-								Ling Yiu, Leo (SID: 1155092438)
+								Ho Ka Wing, Charles<br>
+								Ling Yiu, Leo<br>
+								Chau Chuk Jee
 							</p>
 							<ul class="actions">
 								<li><a href="#one" class="button scrolly">Learn more</a></li>
@@ -193,8 +195,91 @@
 							</div>
 						</div>
 					</section>
+
+					<section id="three" class="wrapper style2 fade-up">
+						<div class="inner">
+							<h2>Articulation Animations</h2>
+							<p>
+								Slowed down visualizations and sound examples of some of the articulation in our program.<br>
+								The sounds examples are not one to one match of the visualization.
+							</p>
+							<div class="features">
+								<section>
+									<h3 align="center">Sustain</h3>
+									<div class="video-container">
+										<video controls>
+											<source src="animations/sustain.mp4" type="video/mp4">
+											Your browser does not support the video tag.
+										</video>
+									</div>
+									<p>A finger first presses down on the fretboard, then another finger pull on the string to pluck it.<br>
+									(Animation slowed to about 1/100 of original speed)</p>
+									<div class="audio-container mb-2">
+										<audio controls>
+											<source src="animations/sustain.wav" type="audio/wav">
+											Your browser does not support the audio element.
+										</audio>
+									</div>
+									
+								</section>
+								<section>
+									<h3 align="center">Slap</h3>
+									<div class="video-container">
+										<video controls>
+											<source src="animations/slap.mp4" type="video/mp4">
+											Your browser does not support the video tag.
+										</video>
+									</div>
+									<p>The slope of the fretboard colliders are reduced, and the plucking finger slap down on the string before retracting quickly..<br>
+									(Animation slowed to about 1/100 of original speed)</p>
+									<div class="audio-container mb-2">
+										<audio controls>
+											<source src="animations/slaping.wav" type="audio/wav">
+											Your browser does not support the audio element.
+										</audio>
+									</div>
+									
+								</section>
+								<section>
+									<h3 align="center">Natural Harmonics</h3>
+									<div class="video-container">
+										<video controls>
+											<source src="animations/harmonic.mp4" type="video/mp4">
+											Your browser does not support the video tag.
+										</video>
+									</div>
+									<p>A finger is placed at a ratio of the full string length, canceling some of the harmonics when the string is plucked..<br>
+									(Animation slowed to about 1/100 of original speed)</p>
+									<div class="audio-container mb-2">
+										<audio controls>
+											<source src="animations/harmonic.wav" type="audio/wav">
+											Your browser does not support the audio element.
+										</audio>
+									</div>
+								</section>
+                                <section>
+									<h3 align="center">Legato Slide</h3>
+									<div class="video-container">
+										<video controls>
+											<source src="animations/slide.mp4" type="video/mp4">
+											Your browser does not support the video tag.
+										</video>
+									</div>
+									<p>The string is plucked, then the freting finger can slide along the fretboard to change the pitch.<br>
+									(Animation slowed to about 1/50 of original speed)</p>
+									<div class="audio-container mb-2">
+										<audio controls>
+											<source src="animations/slide.wav" type="audio/wav">
+											Your browser does not support the audio element.
+										</audio>
+									</div>
+									
+								</section>
+							</div>
+						</div>
+					</section>
 					
-					<section id="three" class="wrapper style1 fade-up">
+					<section id="four" class="wrapper style1 fade-up">
 						<div class="inner">
 							<h2>Downloads</h2>
 							<p>
@@ -249,12 +334,21 @@
 	margin-bottom: 20px;
 }
 
-.video-container iframe, .video-container object, .video-container embed {
+.video-container iframe, .video-container object, .video-container embed , .video-container video{
 	position:absolute;
 	top:0;
 	left:0;
 	width:100%;
 	height:100%;
 	
+}
+.audio-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mb-2 {
+  margin-bottom:1rem;
 }
 </style>
